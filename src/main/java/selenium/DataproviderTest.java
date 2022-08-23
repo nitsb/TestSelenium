@@ -23,8 +23,8 @@ public class DataproviderTest {
 	}
 
 	
-	@Test(dataProvider = "getData")
-	public void f(String url, String emailid) throws InterruptedException {
+	@Test(dataProvider = "getTestData")
+	public void testdataprovider(String url, String emailid) throws InterruptedException {
 
 		driver.get(url);
 		driver.findElement(By.id("login-username")).sendKeys(emailid);
@@ -32,7 +32,7 @@ public class DataproviderTest {
 	}
 	
 	@DataProvider
-	public Iterator<Object[]> getData()
+	public Iterator<Object[]> getTestData()
 	{
 		ArrayList<Object[]> data = TestUtil.getDatafromExcel();
 		return data.iterator();
