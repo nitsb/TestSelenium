@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+  <parameter name="url" value="https://login.yahoo.com/"/>
+  <parameter name="emailID" value="abc@yahoo.com"/>
+
+    <classes>
+      <!--<class name="selenium.InvocationCountTest"/>
+      <class name="selenium.TestNGFeatures"/>
+      <class name="selenium.ExceptionTimeoutTest"/>-->
+      <class name="selenium.ParameterTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
