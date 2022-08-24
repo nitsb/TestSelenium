@@ -8,8 +8,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class ParameterTests {
+	//running on chrome browser
 	ChromeDriver driver;
-
+	
 	@BeforeTest()
 	public void beforeTest() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sumit\\Downloads\\chromedriver\\chromedriver.exe");
